@@ -1,0 +1,77 @@
+/* Custom styles for OSMS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #e3e3e3;
+}
+
+/* Login form styles */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Dashboard styles */
+.dashboard-card {
+    border-left: 4px solid #007bff;
+    background: white;
+}
+
+.dashboard-card.products {
+    border-left-color: #28a745;
+}
+
+.dashboard-card.orders {
+    border-left-color: #ffc107;
+}
+
+.dashboard-card.users {
+    border-left-color: #dc3545;
+}
+
+.dashboard-card .card-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dashboard-card .card-value {
+    font-size: 2rem;
+    font-weight: bold;
+} 
