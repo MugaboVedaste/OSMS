@@ -11,13 +11,8 @@ com\osms\model\Order.class
 com\osms\model\Product.class
 com\osms\dao\UserDAO.class
 com\osms\util\EmailUtil.class
-com\osms\model\CategoryReport.class
-com\osms\model\SalesReport.class
-com\osms\model\InventoryReport.class
-com\osms\dao\ReportDAO.class
 com\osms\dao\OrderItemDAO.class
 com\osms\servlet\AddSupplierServlet.class
-com\osms\servlet\GenerateReportServlet.class
 com\osms\model\OrderItem.class
 com\osms\servlet\UpdateProductServlet.class
 com\osms\servlets\DatabaseInitServlet.class

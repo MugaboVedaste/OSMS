@@ -66,14 +66,4 @@
         <servlet-name>DeleteProductServlet</servlet-name>
         <url-pattern>/deleteProduct</url-pattern>
     </servlet-mapping>
-
-    <!-- Add servlet definition and mapping for GenerateReportServlet -->
-    <servlet>
-        <servlet-name>GenerateReportServlet</servlet-name>
-        <servlet-class>com.osms.servlet.GenerateReportServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>GenerateReportServlet</servlet-name>
-        <url-pattern>/admin/generateReport</url-pattern>
-    </servlet-mapping>
 </web-app> 
