@@ -99,6 +99,3 @@ src/main/
     └── login.jsp           # Login page
 ```
 
-## License
-
-This project is licensed under the MIT License. 
