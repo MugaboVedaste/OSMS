@@ -1,0 +1,276 @@
+/* Main styles for Online Shop Management System */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0d6efd;
+}
+
+/* Tables */
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Form Controls */
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Alert messages */
+.alert {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Modal styling */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card-value {
+        font-size: 1.5rem;
+    }
+}
+
+/* Admin dashboard specific styles */
+.admin-sidebar {
+    background-color: #212529;
+    min-height: calc(100vh - 56px);
+    color: #fff;
+}
+
+.admin-sidebar .nav-link {
+    color: #ced4da;
+    padding: 0.5rem 1rem;
+    margin-bottom: 5px;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.admin-sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+/* Customer pages specific styles */
+.product-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+.badge-corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Cart and order pages */
+.quantity-input {
+    width: 70px;
+}
+
+.order-status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.status-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-processing {
+    background-color: #0dcaf0;
+    color: #212529;
+}
+
+.status-shipped {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.status-delivered {
+    background-color: #198754;
+    color: #fff;
+}
+
+.status-canceled {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Profile and account settings */
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.address-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.address-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Custom styles for OSMS */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #007bff;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #e3e3e3;
+}
+
+/* Login form styles */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Dashboard styles */
+.dashboard-card {
+    border-left: 4px solid #007bff;
+    background: white;
+}
+
+.dashboard-card.products {
+    border-left-color: #28a745;
+}
+
+.dashboard-card.orders {
+    border-left-color: #ffc107;
+}
+
+.dashboard-card.users {
+    border-left-color: #dc3545;
+}
+
+.dashboard-card .card-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dashboard-card .card-value {
+    font-size: 2rem;
+    font-weight: bold;
+}

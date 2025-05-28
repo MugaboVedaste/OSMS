@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>Online Shop Management System</display-name>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <!-- Error Pages -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/404.jsp</location>
+    </error-page>
+    
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error/500.jsp</location>
+    </error-page>
+    
+    <!-- Servlet Registration -->
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.osms.servlet.ProductServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/products/*</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Individual Product Action Servlets -->
+    <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>com.osms.servlet.AddProductServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AddProductServlet</servlet-name>
+        <url-pattern>/addProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>com.osms.servlet.UpdateProductServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <url-pattern>/updateProduct</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>com.osms.servlet.DeleteProductServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <url-pattern>/deleteProduct</url-pattern>
+    </servlet-mapping>
+</web-app> 
